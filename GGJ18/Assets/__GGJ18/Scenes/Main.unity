@@ -359,6 +359,11 @@ Camera:
   m_PrefabParentObject: {fileID: 20171315907779280, guid: 358b08becfee75645a9e1eb7f3b139cb,
     type: 2}
   m_PrefabInternal: {fileID: 1171163229}
+--- !u!224 &701003466 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224672702324261208, guid: 0d362049f82d66041aebdebaab3d0260,
+    type: 2}
+  m_PrefabInternal: {fileID: 1490860425}
 --- !u!224 &779431338 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224242752159162402, guid: 0d362049f82d66041aebdebaab3d0260,
@@ -444,6 +449,11 @@ Prefab:
       propertyPath: m_NormalizedViewPortRect.width
       value: 0.75
       objectReference: {fileID: 0}
+    - target: {fileID: 114323220420328628, guid: 358b08becfee75645a9e1eb7f3b139cb,
+        type: 2}
+      propertyPath: _crossHair
+      value: 
+      objectReference: {fileID: 701003466}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 358b08becfee75645a9e1eb7f3b139cb, type: 2}
   m_IsPrefabParent: 0

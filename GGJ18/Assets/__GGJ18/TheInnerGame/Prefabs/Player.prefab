@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sensitivity: 3
-  _shotRate: 0.5
+  _shotRate: 0.8
   _gun: {fileID: 0}
   _cameraParent: {fileID: 4415285149881168}
   _fire: {fileID: 0}
