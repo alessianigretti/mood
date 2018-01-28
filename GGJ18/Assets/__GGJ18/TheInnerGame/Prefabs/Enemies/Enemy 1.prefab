@@ -176,7 +176,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1524714235025422}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.92, z: 0}
+  m_LocalPosition: {x: 247.0734, y: -324.98273, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4830660500198628}
@@ -232,7 +232,7 @@ Transform:
   m_GameObject: {fileID: 1904682946161540}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 4940703732818612}
   m_Father: {fileID: 4207177347206044}
@@ -279,8 +279,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.3717756, z: 1}
-  m_Center: {x: 0, y: 0.18588781, z: 0}
+  m_Size: {x: 4.331772, y: 6.496643, z: 1.2106552}
+  m_Center: {x: 0.20079803, y: 0.4489441, z: 0.105327606}
 --- !u!95 &95601348664607782
 Animator:
   serializedVersion: 3
@@ -326,12 +326,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dae558c3c6fe89e42b6ce7d7a9364120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxLifes: 2
+  _maxLifes: 3
   _points: 2
   _pathCurve: 13
   _arcSize: 0
   _halfWaypointsNumber: 0
-  _speed: 1
+  _speed: 1.3
   _tinterWhiter: {fileID: 114161434186225746}
   _spriteEnemy: {fileID: 4830660500198628}
   _diedAnimation0: {fileID: 4140378649716140}
