@@ -180,6 +180,8 @@ public class Enemy : MonoBehaviour {
             }
 
             //Effects
+            AudioController.Instance.PlayEnemy0Sound();
+
             _tinterWhiter.whiteSprite();
             Timing.CallDelayed(0.1f, () =>
             {

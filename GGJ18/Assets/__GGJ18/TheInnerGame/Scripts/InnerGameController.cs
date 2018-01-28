@@ -91,10 +91,12 @@ public class InnerGameController : TeamTheDream.Singleton<InnerGameController> {
         _enemiesSpawn.StartSpawn();
 
         _view.ShowHighScore();
+        AudioController.Instance.PlayMusic();
     }
 
     private void EndGame()
     {
+        AudioController.Instance.PlayLoseMusic();
         _view.Show(() =>
         {
             Finish();

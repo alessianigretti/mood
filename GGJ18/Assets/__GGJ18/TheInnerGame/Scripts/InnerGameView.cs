@@ -53,6 +53,7 @@ public class InnerGameView : TeamTheDream.Singleton<InnerGameView> {
     void ChangeImageGirlLose(){
 
         _girl.sprite = _losePoseGirl;
+        AudioController.Instance.PlayLoseMusic();
         Timing.CallDelayed(0.4f, () => {
             _girl.sprite = _normalPose;
         });
