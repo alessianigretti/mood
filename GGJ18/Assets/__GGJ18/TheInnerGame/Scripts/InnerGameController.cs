@@ -71,6 +71,7 @@ public class InnerGameController : TeamTheDream.Singleton<InnerGameController> {
         {
             _highScore = _score;
             PlayerPrefs.SetInt("HighScore", _highScore);
+            PlayerPrefs.Save();
         }
         _view.SetScoreText(_score, _highScore);
         if (OnPlayerKillsEnemy != null) OnPlayerKillsEnemy(enemy.Points);
@@ -99,7 +100,8 @@ public class InnerGameController : TeamTheDream.Singleton<InnerGameController> {
         AudioController.Instance.PlayLoseMusic();
         _view.Show(() =>
         {
-            Finish();
+            _view.HideHighScore();
+            _enemiesSpawn.Dispose();
             InitializeGame();
         });
     }

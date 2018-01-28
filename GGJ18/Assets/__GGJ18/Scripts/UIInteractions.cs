@@ -5,8 +5,8 @@ using TMPro;
 
 public class UIInteractions : MonoBehaviour
 {
-    public int totalFollowers = 0;
-    public int totalViewers = 0;
+    //public int totalFollowers = 0;
+    //public int totalViewers = 0;
 
     public int chatScore;
 
@@ -21,6 +21,7 @@ public class UIInteractions : MonoBehaviour
         else if (answerNumber == 2)
         {
             chatScore--;
+            if (chatScore < 0) chatScore = 0;
         }
     }
 

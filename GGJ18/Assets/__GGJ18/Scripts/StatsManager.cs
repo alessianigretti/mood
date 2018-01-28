@@ -17,17 +17,17 @@ public class StatsManager : MonoBehaviour
     
     void Start()
     {
-        uiInteract.totalFollowers = 0;
-        totalViewers = PlayerPrefs.GetInt("viewers");
-        uiInteract.totalViewers = 0;
+        //uiInteract.totalFollowers = PlayerPrefs.GetInt("Followers");
+        followers = PlayerPrefs.GetInt("Followers", 0);
+        totalViewers = followers;
+        //uiInteract.totalViewers = totalViewers;
         InnerGameController.Instance.OnPlayerKillsEnemy +=	InnerGameController_OnPlayerKillsEnemy;
     }
 
     void InnerGameController_OnPlayerKillsEnemy(int points)
     {
         newViewers += points;
-        totalViewers = newViewers;
-        PlayerPrefs.SetInt("viewers",totalViewers);
+        totalViewers += newViewers;
     }
 
     void Update()
@@ -38,7 +38,11 @@ public class StatsManager : MonoBehaviour
 
     public void UpdateFollowers()
     {
+
         followers += (int)((float)newViewers * ((float)uiInteract.chatScore / (float)chatMessages.counter) * variable);
-        if (followers < 0) followers = 0;
+        newViewers = 0;
+
+        PlayerPrefs.SetInt("Followers", followers);
+        PlayerPrefs.Save();
     }
 }
