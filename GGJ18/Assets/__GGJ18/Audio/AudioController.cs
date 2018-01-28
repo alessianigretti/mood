@@ -162,7 +162,7 @@ public class AudioController : TeamTheDream.Singleton<AudioController> {
         else
         {
             _musicSource.clip = music;
-            _musicSource.volume = 0.2f;
+            _musicSource.volume = 0.1f;
         }
         //TODO: transitions?
     }
