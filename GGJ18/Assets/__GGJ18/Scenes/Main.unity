@@ -236,6 +236,10 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1639030239790548, guid: 4931563841d533a4081e2cc753c649e5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4931563841d533a4081e2cc753c649e5, type: 2}
   m_IsPrefabParent: 0
@@ -429,26 +433,6 @@ Prefab:
       propertyPath: _fire
       value: 
       objectReference: {fileID: 1027717686}
-    - target: {fileID: 114323220420328628, guid: 358b08becfee75645a9e1eb7f3b139cb,
-        type: 2}
-      propertyPath: _shotRate
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 20171315907779280, guid: 358b08becfee75645a9e1eb7f3b139cb,
-        type: 2}
-      propertyPath: m_NormalizedViewPortRect.y
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 20171315907779280, guid: 358b08becfee75645a9e1eb7f3b139cb,
-        type: 2}
-      propertyPath: m_NormalizedViewPortRect.height
-      value: 0.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 20171315907779280, guid: 358b08becfee75645a9e1eb7f3b139cb,
-        type: 2}
-      propertyPath: m_NormalizedViewPortRect.width
-      value: 0.75
-      objectReference: {fileID: 0}
     - target: {fileID: 114323220420328628, guid: 358b08becfee75645a9e1eb7f3b139cb,
         type: 2}
       propertyPath: _crossHair
