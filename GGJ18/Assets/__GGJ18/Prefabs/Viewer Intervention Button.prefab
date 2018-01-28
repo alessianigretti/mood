@@ -166,6 +166,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb70f1de17a04fcfadc79da21f0b9e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _avatarImage: {fileID: 114756356198928634}
+  _avatarsList:
+  - {fileID: 21300000, guid: 065d1605ab2a8d64d9fd96d17a2734cc, type: 3}
+  - {fileID: 21300000, guid: f9de707f155c1d94e8b531dd605d56ff, type: 3}
+  - {fileID: 21300000, guid: d29346dc0bff35f4b81c560ffc78ee86, type: 3}
+  - {fileID: 21300000, guid: b976d07f1809c604aa08fdaa20161a0b, type: 3}
+  - {fileID: 21300000, guid: e55cec162a861e544b3570a5c9fba6a2, type: 3}
+  - {fileID: 21300000, guid: 766f4b79085663d4cb0539285ab38710, type: 3}
+  - {fileID: 21300000, guid: 30d08c724fc9e5d4aa66078791821182, type: 3}
+  - {fileID: 21300000, guid: 2002fd8a2c916ae45a68793cd5af9e0c, type: 3}
   index: 0
 --- !u!114 &114215874758910852
 MonoBehaviour:
@@ -1089,7 +1099,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 174.79, y: 90.13}
+  m_SizeDelta: {x: 174.79, y: 90.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224816253345113702
 RectTransform:

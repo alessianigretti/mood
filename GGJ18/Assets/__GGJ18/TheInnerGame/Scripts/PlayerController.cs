@@ -6,119 +6,124 @@ using DG.Tweening;
 
 public class PlayerController : MonoBehaviour {
 
-    [SerializeField]
-    private float _sensitivity = 2f;
+	public static PlayerController instance;
 
-    [SerializeField]
-    private float _shotRate = 1f;
+	[SerializeField]
+	private float _sensitivity = 2f;
 
-    [SerializeField]
-    RectTransform _gun;
+	[SerializeField]
+	private float _shotRate = 1f;
 
-    [SerializeField]
-    Transform _cameraFather;
+	[SerializeField]
+	RectTransform _gun;
 
-    [SerializeField]
-    RectTransform _fire;
+	[SerializeField]
+	Transform _cameraFather;
 
-    private Transform _cameraTransform;
-    private Vector2 _referenceMousePosition;
+	[SerializeField]
+	RectTransform _fire;
 
-    private float _nextShot = 0;
+	private Transform _cameraTransform;
+	private Vector2 _referenceMousePosition;
 
-    //[SerializeField]
-    //private Vector2 _speed;
+	private float _nextShot = 0;
 
-    private void Awake()
-    {
-        _cameraTransform = Camera.main.transform;
-    }
+	public bool inputEnabled = true;
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            InnerGameController.Instance.SwitchInnerGameActive();
-        }
+	//[SerializeField]
+	//private Vector2 _speed;
 
-        if (InnerGameController.Instance.IsActive)
-        {
-            _cameraTransform.Rotate(
-                    -Input.GetAxis("Mouse Y") * _sensitivity,
-                    0,
-                    0);
+	private void Awake () {
+		instance = this;
+		_cameraTransform = Camera.main.transform;
+	}
 
-            transform.Rotate(
-                    0,
-                    Input.GetAxis("Mouse X") * _sensitivity,
-                    0);
+	private void Update () {
+		if (inputEnabled) {
+			if (Input.GetKeyDown (KeyCode.Tab)) {
+				InnerGameController.Instance.SwitchInnerGameActive ();
+			}
 
-            _cameraTransform.eulerAngles = new Vector3(
-                    _cameraTransform.eulerAngles.x, //Mathf.Clamp(_cameraTransform.eulerAngles.x, _minCameraRotation.x, _maxCameraRotation.x),
-                    _cameraTransform.eulerAngles.y, //Mathf.Clamp(_cameraTransform.eulerAngles.y, _minCameraRotation.y, _maxCameraRotation.y),
-                    0); //Mathf.Clamp(_cameraTransform.eulerAngles.z, _minCameraRotation.z, _maxCameraRotation.z));
+			if (InnerGameController.Instance.IsActive) {
+				_cameraTransform.Rotate (
+					-Input.GetAxis ("Mouse Y") * _sensitivity,
+					0,
+					0);
 
-            if (Input.GetMouseButtonDown(0))
-            {
-                Shot();
-            }
+				transform.Rotate (
+					0,
+					Input.GetAxis ("Mouse X") * _sensitivity,
+					0);
 
-            //Vector2 _move = Vector2.zero;
-            //if (Input.GetKey(KeyCode.A))
-            //{
-            //    _move.x -= _speed.x;
-            //}
-            //if (Input.GetKey(KeyCode.D))
-            //{
-            //    _move.x += _speed.x;
-            //}
-            //if (Input.GetKey(KeyCode.W))
-            //{
-            //    _move.y += _speed.y;
-            //}
-            //if (Input.GetKey(KeyCode.S))
-            //{
-            //    _move.y -= _speed.y;
-            //}
+				_cameraTransform.eulerAngles = new Vector3 (
+					_cameraTransform.eulerAngles.x, //Mathf.Clamp(_cameraTransform.eulerAngles.x, _minCameraRotation.x, _maxCameraRotation.x),
+					_cameraTransform.eulerAngles.y, //Mathf.Clamp(_cameraTransform.eulerAngles.y, _minCameraRotation.y, _maxCameraRotation.y),
+					0); //Mathf.Clamp(_cameraTransform.eulerAngles.z, _minCameraRotation.z, _maxCameraRotation.z));
 
-            //transform.position += transform.forward * _move.y * Time.deltaTime;
-            //transform.position += transform.right * _move.x * Time.deltaTime;
-        }
+				if (Input.GetMouseButtonDown (0)) {
+					Shot ();
+				}
 
-        _referenceMousePosition = Input.mousePosition;
-    }
+				//Vector2 _move = Vector2.zero;
+				//if (Input.GetKey(KeyCode.A))
+				//{
+				//    _move.x -= _speed.x;
+				//}
+				//if (Input.GetKey(KeyCode.D))
+				//{
+				//    _move.x += _speed.x;
+				//}
+				//if (Input.GetKey(KeyCode.W))
+				//{
+				//    _move.y += _speed.y;
+				//}
+				//if (Input.GetKey(KeyCode.S))
+				//{
+				//    _move.y -= _speed.y;
+				//}
 
-    private void Shot()
-    {
-        if (Time.time >= _nextShot)
-        {
-            _fire.gameObject.SetActive(true);
-            Timing.CallDelayed(0.1f,()=>{
-                _fire.gameObject.SetActive(false);
-            });
+				//transform.position += transform.forward * _move.y * Time.deltaTime;
+				//transform.position += transform.right * _move.x * Time.deltaTime;
+			}
 
-            /* _cameraFather.DOLocalRotate(new Vector3(0f, 0f, 10f), 0.2f).SetEase(Ease.Flash).OnComplete(() =>
+			_referenceMousePosition = Input.mousePosition;
+		}
+	}
+
+	public void Shot () {
+		if (Time.time >= _nextShot) {
+			_fire.gameObject.SetActive (true);
+			Timing.CallDelayed (0.1f, () => {
+				_fire.gameObject.SetActive (false);
+			});
+
+			if (TeamTheDream.StreamService.NetworkManager.instance != null) {
+
+			}
+
+			/* _cameraFather.DOLocalRotate(new Vector3(0f, 0f, 10f), 0.2f).SetEase(Ease.Flash).OnComplete(() =>
             {
                 _cameraFather.DOLocalRotate(Vector3.zero, 3f);
             });
 */
-            _gun.DOAnchorPos3D(new Vector3(-250f,0f,-190f),0.15f).SetEase(Ease.Flash).OnComplete(()=>{
-                _gun.DOAnchorPos3D(new Vector3(-250f, 0f, 0f), 3f);
-            });
+			_gun.DOAnchorPos3D (new Vector3 (-250f, 0f, -190f), 0.15f).SetEase (Ease.Flash).OnComplete (() => {
+				_gun.DOAnchorPos3D (new Vector3 (-250f, 0f, 0f), 3f);
+			});
 
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(
-                    new Vector2(Camera.main.scaledPixelWidth / 2, Camera.main.scaledPixelHeight / 2));
+			if (inputEnabled) {
+				RaycastHit hit;
+				Ray ray = Camera.main.ScreenPointToRay (
+					         new Vector2 (Camera.main.scaledPixelWidth / 2, Camera.main.scaledPixelHeight / 2));
 
-            if (Physics.Raycast(ray, out hit, 50f, ~0)) {
-                Debug.Log(hit.collider);
-                if (hit.collider.tag == "Enemy")
-                {
-                    hit.collider.GetComponent<Enemy>().TakeDamage();
-                }
-            }
+				if (Physics.Raycast (ray, out hit, 50f, ~0)) {
+					Debug.Log (hit.collider);
+					if (hit.collider.tag == "Enemy") {
+						hit.collider.GetComponent<Enemy> ().TakeDamage ();
+					}
+				}
+			}
 
-            _nextShot = Time.time + _shotRate;
-        }
-    }
+			_nextShot = Time.time + _shotRate;
+		}
+	}
 }

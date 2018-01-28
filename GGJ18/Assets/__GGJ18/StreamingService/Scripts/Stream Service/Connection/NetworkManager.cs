@@ -79,6 +79,10 @@ namespace TeamTheDream.StreamService {
 			SendJSON ("newgame", JsonUtility.ToJson (new Game (username)));
 		}
 
+		public void Shoot () {
+			socket.Emit ("shoot");
+		}
+
 
 		void OnApplicationQuit () {
 			Disconnect ();

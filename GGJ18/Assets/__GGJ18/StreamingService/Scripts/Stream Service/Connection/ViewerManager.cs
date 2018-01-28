@@ -39,6 +39,7 @@ namespace TeamTheDream.StreamService {
 			socket.On ("syncrotation", Receive_Rotation);
 			socket.On ("spawnenemy", Receive_Spawn);
 			socket.On ("killenemy", Receive_Kill);
+			socket.On ("viewersshoot", Receive_Shot);
 		}
 
 
@@ -120,6 +121,10 @@ namespace TeamTheDream.StreamService {
 					Destroy (synchronizables [i].gameObject);
 				}
 			}
+		}
+
+		public void Receive_Shot (SocketIOEvent e) {
+			PlayerController.instance.Shot ();
 		}
 
 

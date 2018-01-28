@@ -107,13 +107,13 @@ public class Enemy : MonoBehaviour {
     {
         if (_tweenerX != null)
         {
-            _tweenerX = null;
             _tweenerX.Kill();
+            _tweenerX = null;
         }
         if (_tweenerZ != null)
         {
-            _tweenerZ = null;
             _tweenerZ.Kill();
+            _tweenerZ = null;
         }
 
         _pool.ReturnToPool(this);
@@ -170,13 +170,13 @@ public class Enemy : MonoBehaviour {
         {
             if (_tweenerX != null)
             {
-                _tweenerX = null;
                 _tweenerX.Kill();
+                _tweenerX = null;
             }
             if (_tweenerZ != null)
             {
-                _tweenerZ = null;
                 _tweenerZ.Kill();
+                _tweenerZ = null;
             }
 
             //Effects

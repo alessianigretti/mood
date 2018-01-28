@@ -5,5 +5,16 @@ using UnityEngine.UI;
 
 public class Information : MonoBehaviour {
 
-	public int index;
+    [SerializeField]
+    Image _avatarImage;
+
+    [SerializeField]
+    Sprite[] _avatarsList;
+
+    public int index;
+
+    private void OnEnable()
+    {
+        _avatarImage.sprite = _avatarsList[Random.Range(0, _avatarsList.Length)];
+    }
 }
