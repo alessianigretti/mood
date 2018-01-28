@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using MEC;
 
 public class AddChatMessages : MonoBehaviour
 {
@@ -29,13 +30,14 @@ public class AddChatMessages : MonoBehaviour
 	{
 		InnerGameController.Instance.OnPlayerDie +=	InnerGameController_OnPlayerDie;
 		StartCoroutine(Spawn(wait));
+
+        Timing.CallPeriodically(Mathf.Infinity, 10f, stats.UpdateFollowers);
 	}
 
 	void InnerGameController_OnPlayerDie()
 	{
 		latestBtn1.interactable = false;
 		latestBtn2.interactable = false;
-		stats.UpdateFollowersEndOfMatch();
 	}
 
 	IEnumerator Spawn(float amount)

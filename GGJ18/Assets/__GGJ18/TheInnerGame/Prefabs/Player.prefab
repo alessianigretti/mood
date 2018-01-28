@@ -113,9 +113,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.053194445
-    width: 0.8148148
-    height: 0.94680554
+    y: -0.02
+    width: 0.75
+    height: 0.98
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -155,7 +155,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sensitivity: 3
-  _shotRate: 2
+  _shotRate: 0.5
   _gun: {fileID: 0}
-  _cameraFather: {fileID: 4415285149881168}
+  _cameraParent: {fileID: 4415285149881168}
   _fire: {fileID: 0}
+  _crossHair: {fileID: 0}
+  inputEnabled: 1
