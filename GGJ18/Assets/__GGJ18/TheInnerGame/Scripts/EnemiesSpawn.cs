@@ -84,6 +84,7 @@ public class EnemiesSpawn : MonoBehaviour {
 
     public void Dispose()
     {
+        StopSpawn();
         for (int i = 0; i < _enemyList.Count; ++i)
         {
             Kill(_enemyList[i]);

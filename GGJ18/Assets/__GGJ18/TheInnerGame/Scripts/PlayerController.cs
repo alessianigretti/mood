@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MEC;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour {
 
 	[SerializeField]
 	RectTransform _fire;
+
 
 	private Transform _cameraTransform;
 	private Vector2 _referenceMousePosition;

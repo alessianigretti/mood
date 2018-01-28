@@ -23,15 +23,53 @@ public class InnerGameView : TeamTheDream.Singleton<InnerGameView> {
     [SerializeField]
     Image _damageImage;
 
+    [SerializeField]
+    Image _girl;
+
+    [SerializeField]
+    Sprite _normalPose;
+
+    [SerializeField]
+    Sprite _losePoseGirl;
+
+    [SerializeField]
+    Sprite [] _takeDamageGirl;
+
     Tweener _damageTweener;
     CoroutineHandle? _damageCoroutine;
 
+    private void Start()
+    {
+        InnerGameController.Instance.OnPlayerDie += ChangeImageGirlLose;
+        InnerGameController.Instance.OnPlayerKillsEnemy += ChangeImageGirlTakeDamage;
+    }
+
+    void ChangeImageGirlLose(){
+
+        _girl.sprite = _losePoseGirl;
+        Timing.CallDelayed(0.4f, () => {
+            _girl.sprite = _normalPose;
+        });
+    }
+
+    void ChangeImageGirlTakeDamage(int number)
+    {
+        _girl.sprite = _takeDamageGirl[Random.Range(0,_takeDamageGirl.Length)];
+        Timing.CallDelayed(0.4f, ()=>{
+            _girl.sprite = _normalPose;
+        });
+    }
+
     // Use this for initialization
     public void Hide (TweenCallback onComplete) {
-        Timing.CallDelayed(2f, () =>
+        Timing.CallDelayed(1f, () =>
         {
-            _searchingMatchText.gameObject.SetActive(false);
-            _logo.DOFade(0, 2f).OnComplete(() => _overlay.DOFade(0, 1f).OnComplete(onComplete));
+            _searchingMatchText.gameObject.SetActive(true);
+            Timing.CallDelayed(5f, () =>
+            {
+                _searchingMatchText.gameObject.SetActive(false);
+                _logo.DOFade(0, 2f).OnComplete(() => _overlay.DOFade(0, 1f).OnComplete(onComplete));
+            });
         });
     }
 
@@ -46,7 +84,6 @@ public class InnerGameView : TeamTheDream.Singleton<InnerGameView> {
                _gameOverText.DOFade(0, 2f).OnComplete(() =>
                {
                    _gameOverText.gameObject.SetActive(false);
-                   _searchingMatchText.gameObject.SetActive(true);
                    _logo.DOFade(1f, 1f).OnComplete(onComplete);
                });
            });
