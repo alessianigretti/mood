@@ -22,8 +22,6 @@ public class UIInteractions : MonoBehaviour
         {
             chatScore--;
         }
-
-        Debug.Log(chatScore);
     }
 
     public void QuitGame()

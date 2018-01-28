@@ -19,6 +19,8 @@ public class Desktop : MonoBehaviour {
 
     public void Close()
     {
+        if (InnerGameController.Instance.IsActive) return;
+
         InnerGameController.Instance.Finish();
             ;
         _canvasGroup.gameObject.SetActive(true);

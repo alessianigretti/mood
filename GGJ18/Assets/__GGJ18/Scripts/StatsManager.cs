@@ -11,7 +11,7 @@ public class StatsManager : MonoBehaviour
     public AddChatMessages chatMessages;
     public float variable = 0.5f;
 
-    int followersEndOfMatch = 0;
+    int followers = 0;
     int newViewers = 0;
     public int totalViewers;
     
@@ -32,12 +32,12 @@ public class StatsManager : MonoBehaviour
 
     void Update()
     {
-        followerText.SetText(followersEndOfMatch.ToString());
+        followerText.SetText(followers.ToString());
         viewerText.SetText(totalViewers.ToString());
     }
 
-    public void UpdateFollowersEndOfMatch()
+    public void UpdateFollowers()
     {
-        followersEndOfMatch += (int) (newViewers * (uiInteract.chatScore/chatMessages.counter) * variable);
+        followers += (int)((float)newViewers * ((float)uiInteract.chatScore / (float)chatMessages.counter) * variable);
     }
 }
