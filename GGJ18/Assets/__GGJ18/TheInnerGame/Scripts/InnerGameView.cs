@@ -28,10 +28,14 @@ public class InnerGameView : TeamTheDream.Singleton<InnerGameView> {
 
     // Use this for initialization
     public void Hide (TweenCallback onComplete) {
-        Timing.CallDelayed(2f, () =>
+        Timing.CallDelayed(1f, () =>
         {
-            _searchingMatchText.gameObject.SetActive(false);
-            _logo.DOFade(0, 2f).OnComplete(() => _overlay.DOFade(0, 1f).OnComplete(onComplete));
+            _searchingMatchText.gameObject.SetActive(true);
+            Timing.CallDelayed(5f, () =>
+            {
+                _searchingMatchText.gameObject.SetActive(false);
+                _logo.DOFade(0, 2f).OnComplete(() => _overlay.DOFade(0, 1f).OnComplete(onComplete));
+            });
         });
     }
 
@@ -46,7 +50,6 @@ public class InnerGameView : TeamTheDream.Singleton<InnerGameView> {
                _gameOverText.DOFade(0, 2f).OnComplete(() =>
                {
                    _gameOverText.gameObject.SetActive(false);
-                   _searchingMatchText.gameObject.SetActive(true);
                    _logo.DOFade(1f, 1f).OnComplete(onComplete);
                });
            });

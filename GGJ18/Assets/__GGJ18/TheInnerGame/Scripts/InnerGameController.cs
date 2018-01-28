@@ -33,9 +33,7 @@ public class InnerGameController : TeamTheDream.Singleton<InnerGameController> {
 
     // Use this for initialization
     private void Start () {
-        IsActive = true;
         _enemiesSpawn.Initialize();
-        InitializeGame();
     }
 
     public void TakeDamage(Enemy enemy)
@@ -68,8 +66,9 @@ public class InnerGameController : TeamTheDream.Singleton<InnerGameController> {
         if (OnPlayerKillsEnemy != null) OnPlayerKillsEnemy(enemy.Points);
     }
 
-    private void InitializeGame()
+    public void InitializeGame()
     {
+        IsActive = true;
         _lifes = _startLifes;
         _view.Hide(StartGame);
     }
@@ -83,7 +82,7 @@ public class InnerGameController : TeamTheDream.Singleton<InnerGameController> {
     {
         _view.Show(() =>
         {
-            _enemiesSpawn.Dispose();
+            Finish();
             InitializeGame();
         });
     }
@@ -93,4 +92,12 @@ public class InnerGameController : TeamTheDream.Singleton<InnerGameController> {
         IsActive = !_isActive;
     }
 
+    public void Finish()
+    {
+        _enemiesSpawn.Dispose();
+        _view.Show(() =>
+        {
+
+        });
+    }
 }
