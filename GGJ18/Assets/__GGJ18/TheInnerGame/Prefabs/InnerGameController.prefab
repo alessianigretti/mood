@@ -63,8 +63,8 @@ MonoBehaviour:
     _chances: 1
   _minSpawnPositionX: -5
   _maxSpawnPositionX: 5
-  _spawnPositionZ: 10
-  _minDelay: 4
+  _spawnPositionZ: 8
+  _minDelay: 3
   _maxDelay: 5
 --- !u!114 &114736507625034942
 MonoBehaviour:
