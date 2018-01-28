@@ -103,6 +103,8 @@ public class PlayerController : MonoBehaviour {
 
 			}
 
+            AudioController.Instance.PlayGunSound();
+
 			/* _cameraFather.DOLocalRotate(new Vector3(0f, 0f, 10f), 0.2f).SetEase(Ease.Flash).OnComplete(() =>
             {
                 _cameraFather.DOLocalRotate(Vector3.zero, 3f);

@@ -72,6 +72,7 @@ public class InnerGameController : TeamTheDream.Singleton<InnerGameController> {
         IsActive = true;
         _lifes = _startLifes;
         _view.Hide(StartGame);
+        AudioController.Instance.PlayMusic();
     }
 
     private void StartGame()
