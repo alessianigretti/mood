@@ -159,10 +159,23 @@ public class Enemy : MonoBehaviour {
         if (_lifes > 0)
         {
             //Effects
-            _tinterWhiter.whiteSprite();
-            Timing.CallDelayed(0.1f,() => 
+            foreach (Transform child in _spriteEnemy.transform)
             {
-                _tinterWhiter.normalSprite();
+                if (child.GetComponent<TintWhite>() != null)
+                {
+                    child.GetComponent<TintWhite>().whiteSprite();
+                }
+            }
+
+            Timing.CallDelayed(0.1f, () =>
+            {
+                foreach (Transform child in _spriteEnemy.transform)
+                {
+                    if (child.GetComponent<TintWhite>() != null)
+                    {
+                        child.GetComponent<TintWhite>().normalSprite();
+                    }
+                }
             });
 
         }
@@ -182,10 +195,21 @@ public class Enemy : MonoBehaviour {
             //Effects
             AudioController.Instance.PlayEnemy0Sound();
 
-            _tinterWhiter.whiteSprite();
+            foreach(Transform child in _spriteEnemy.transform){
+                if(child.GetComponent<TintWhite>() != null){
+                    child.GetComponent<TintWhite>().whiteSprite();
+                }
+            }
+
             Timing.CallDelayed(0.1f, () =>
             {
-                _tinterWhiter.normalSprite();
+                foreach (Transform child in _spriteEnemy.transform)
+                {
+                    if (child.GetComponent<TintWhite>() != null)
+                    {
+                        child.GetComponent<TintWhite>().normalSprite();
+                    }
+                }
             });
 
             _spriteEnemy.gameObject.SetActive(false);
