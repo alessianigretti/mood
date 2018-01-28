@@ -608,6 +608,11 @@ Prefab:
       propertyPath: _crossHair
       value: 
       objectReference: {fileID: 2133493907}
+    - target: {fileID: 114323220420328628, guid: 358b08becfee75645a9e1eb7f3b139cb,
+        type: 2}
+      propertyPath: _shotRate
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 358b08becfee75645a9e1eb7f3b139cb, type: 2}
   m_IsPrefabParent: 0

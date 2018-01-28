@@ -122,6 +122,7 @@ public class AudioController : TeamTheDream.Singleton<AudioController> {
     {
         _musicSource = gameObject.AddComponent<AudioSource>();
         _musicSource.loop = true;
+        _musicSource.volume = 0.2f;
 
         _ambientalSource = gameObject.AddComponent<AudioSource>();
         _ambientalSource.loop = true;
@@ -153,6 +154,7 @@ public class AudioController : TeamTheDream.Singleton<AudioController> {
     {
         _isPlayingMusic = true;
 
+
         if (_isMusicOn)
         {
             _musicSource.Stop();
@@ -162,7 +164,7 @@ public class AudioController : TeamTheDream.Singleton<AudioController> {
         else
         {
             _musicSource.clip = music;
-            _musicSource.volume = 0.1f;
+           
         }
         //TODO: transitions?
     }
@@ -268,8 +270,8 @@ public class AudioController : TeamTheDream.Singleton<AudioController> {
 
     #endregion
 
-    public void PlayGunSound    (){
-        PlayFxSound(_gunSound);
+    public void PlayGunSound (){
+        PlayUiSound(_gunSound);
     }
 
     public void PlayEnemy0Sound()

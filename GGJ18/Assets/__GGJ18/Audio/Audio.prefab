@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31416f75ba6eb4326a46fc0a45f9c987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gunSound: {fileID: 0}
+  _gunSound: {fileID: 8300000, guid: af22801faac72458bb024da9e3715ba7, type: 3}
   _enemy0Sound: {fileID: 8300000, guid: 138d4d0e28faf4d0cb39ac8063c47dbc, type: 3}
   _enemy1Sound: {fileID: 8300000, guid: a44c53eb0f2504dd3983deba94294175, type: 3}
   _startGameMusic: {fileID: 8300000, guid: 0b5683d9643474d6abad12742b858f21, type: 3}
