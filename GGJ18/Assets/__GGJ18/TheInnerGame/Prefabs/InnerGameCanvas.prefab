@@ -165,7 +165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1629492062982864
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,8 +396,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'high score: 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8684343700b981b46923d62440c2222f, type: 2}
-  m_sharedMaterial: {fileID: 21120395035828572, guid: 8684343700b981b46923d62440c2222f,
+  m_fontAsset: {fileID: 11400000, guid: b1c7b348f7ee2a64c9c7c65196033fbe, type: 2}
+  m_sharedMaterial: {fileID: 21516690401568966, guid: b1c7b348f7ee2a64c9c7c65196033fbe,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -563,8 +563,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'score: 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8684343700b981b46923d62440c2222f, type: 2}
-  m_sharedMaterial: {fileID: 21120395035828572, guid: 8684343700b981b46923d62440c2222f,
+  m_fontAsset: {fileID: 11400000, guid: b1c7b348f7ee2a64c9c7c65196033fbe, type: 2}
+  m_sharedMaterial: {fileID: 21516690401568966, guid: b1c7b348f7ee2a64c9c7c65196033fbe,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

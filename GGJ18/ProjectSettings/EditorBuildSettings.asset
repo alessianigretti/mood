@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/__GGJ18/StreamingService/Scenes/Stream_Viewer.unity
     guid: d59b36626dd2e6846b48843902170119
-  - enabled: 1
+  - enabled: 0
     path: Assets/__GGJ18/StreamingService/Scenes/Stream_Viewer_Game.unity
     guid: 20af11a416e9d5b489655263245005e4
-  - enabled: 1
+  - enabled: 0
     path: Assets/__GGJ18/StreamingService/Scenes/__Viewer_Test.unity
     guid: eeab386d8a38ca049a2393ddbc2bc377
+  - enabled: 1
+    path: Assets/__GGJ18/Scenes/Main.unity
+    guid: 32b5a723e10864a0a8090b41559fce13
