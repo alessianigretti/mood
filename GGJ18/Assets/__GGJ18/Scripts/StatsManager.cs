@@ -13,11 +13,12 @@ public class StatsManager : MonoBehaviour
 
     int followersEndOfMatch = 0;
     int newViewers = 0;
-    int totalViewers;
+    public int totalViewers;
     
     void Start()
     {
         uiInteract.totalFollowers = 0;
+        totalViewers = PlayerPrefs.GetInt("viewers");
         uiInteract.totalViewers = 0;
         InnerGameController.Instance.OnPlayerKillsEnemy +=	InnerGameController_OnPlayerKillsEnemy;
     }
@@ -25,12 +26,14 @@ public class StatsManager : MonoBehaviour
     void InnerGameController_OnPlayerKillsEnemy(int points)
     {
         newViewers += points;
+        totalViewers = newViewers;
+        PlayerPrefs.SetInt("viewers",totalViewers);
     }
 
     void Update()
     {
         followerText.SetText(followersEndOfMatch.ToString());
-        viewerText.SetText(newViewers.ToString());
+        viewerText.SetText(totalViewers.ToString());
     }
 
     public void UpdateFollowersEndOfMatch()

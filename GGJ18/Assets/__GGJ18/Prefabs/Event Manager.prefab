@@ -57,7 +57,7 @@ MonoBehaviour:
     type: 2}
   parentObj: {fileID: 0}
   avatar: {fileID: 114756356198928634, guid: 50997aca7acce4f24af06485c69f2289, type: 2}
-  wait: 2
+  wait: 6
   stats: {fileID: 0}
   counter: 0
 --- !u!224 &224585325203737790

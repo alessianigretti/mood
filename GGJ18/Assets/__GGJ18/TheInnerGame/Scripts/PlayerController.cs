@@ -107,7 +107,7 @@ public class PlayerController : MonoBehaviour {
             });
 */
 			_gun.DOAnchorPos3D (new Vector3 (-250f, 0f, -190f), 0.15f).SetEase (Ease.Flash).OnComplete (() => {
-				_gun.DOAnchorPos3D (new Vector3 (-250f, 0f, 0f), 3f);
+                _gun.DOAnchorPos3D (new Vector3 (-250f, 0f, 0f), 3f).SetEase(Ease.InQuart);
 			});
 
 			if (inputEnabled) {

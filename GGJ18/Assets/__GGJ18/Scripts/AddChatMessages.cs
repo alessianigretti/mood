@@ -42,6 +42,22 @@ public class AddChatMessages : MonoBehaviour
 	{
 		yield return new WaitForSeconds(amount);
 
+        /*)if (stats.totalViewers >= 0 && stats.totalViewers < 10)
+        {
+            amount = 10;
+            Debug.Log("Tengo " + stats.totalViewers.ToString() + " viewers y el tiempo es " + amount);
+        }
+        else if (stats.totalViewers > 11 && stats.totalViewers < 100)
+        {
+            amount = 7;
+            Debug.Log("Tengo " + stats.totalViewers.ToString() + " viewers y el tiempo es " + amount);
+        }
+        else if (stats.totalViewers > 101)
+        {
+            amount = 3;
+            Debug.Log("Tengo " + stats.totalViewers.ToString() + " viewers y el tiempo es " + amount);
+        }*/
+
 		GameObject newMessage = Instantiate(messagePrefab);
 		newMessage.transform.SetParent(parentObj.transform);
 		newMessage.transform.localScale = new Vector2(1f, 1f);
@@ -85,6 +101,7 @@ public class AddChatMessages : MonoBehaviour
 
 		counter++;
 
+            
 		StartCoroutine(Timer(amount));
 		StartCoroutine(DestroyMessage(newMessage, amount * 8));
 	}

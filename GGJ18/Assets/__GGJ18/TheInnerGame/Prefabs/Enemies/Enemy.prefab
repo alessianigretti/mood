@@ -319,7 +319,7 @@ MonoBehaviour:
   _pathCurve: 13
   _arcSize: 1.5
   _halfWaypointsNumber: 2
-  _speed: 2
+  _speed: 2.5
   _tinterWhiter: {fileID: 114161434186225746}
   _spriteEnemy: {fileID: 4830660500198628}
   _diedAnimation0: {fileID: 4140378649716140}

@@ -65,7 +65,7 @@ MonoBehaviour:
   _maxSpawnPositionX: 5
   _spawnPositionZ: 10
   _minDelay: 4
-  _maxDelay: 8
+  _maxDelay: 5
 --- !u!114 &114736507625034942
 MonoBehaviour:
   m_ObjectHideFlags: 1
