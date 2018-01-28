@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: deb8e4b50885e42e5bb942634659ebf1
+timeCreated: 1517098338
+licenseType: Pro
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - messagePrefab: {fileID: 1277169031259706, guid: 50997aca7acce4f24af06485c69f2289,
+      type: 2}
+  - parentObj: {instanceID: 0}
+  - name: {fileID: 114642072784408542, guid: 50997aca7acce4f24af06485c69f2289, type: 2}
+  - intervention: {fileID: 114728917505425280, guid: 50997aca7acce4f24af06485c69f2289,
+      type: 2}
+  - avatar: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

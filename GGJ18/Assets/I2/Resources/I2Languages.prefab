@@ -1,0 +1,1042 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1749525520009592}
+  m_IsPrefabParent: 1
+--- !u!1 &1749525520009592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4682668672746772}
+  - component: {fileID: 114017345111460870}
+  m_Layer: 0
+  m_Name: I2Languages
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4682668672746772
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1749525520009592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114017345111460870
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1749525520009592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 488051eaa73ba421e8fe4868f2e0f364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Google_WebServiceURL: https://script.google.com/a/dreaming-arts.com/macros/s/AKfycbyI6yFRUOCeDtStfbMYBuLOQJ9eD-ZgiR0ZQZhJOSfoONhPJH0/exec
+  Google_SpreadsheetKey: 131hILWCI9nwD40IK91dTwDZ_6lVJR7E-iZkyd8xTrQA
+  Google_SpreadsheetName: I2Loc GGJ18 Localization
+  Google_LastUpdatedVersion: 1517122777669
+  GoogleUpdateFrequency: 3
+  GoogleUpdateDelay: 5
+  mTerms:
+  - Term: Answers0/A0-1
+    TermType: 0
+    Description: 
+    Languages:
+    - Hello
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-2
+    TermType: 0
+    Description: 
+    Languages:
+    - :)
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-3
+    TermType: 0
+    Description: 
+    Languages:
+    - Kappa
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-4
+    TermType: 0
+    Description: 
+    Languages:
+    - Ignore
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-5
+    TermType: 0
+    Description: 
+    Languages:
+    - Older than you
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-6
+    TermType: 0
+    Description: 
+    Languages:
+    - Always I do
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-7
+    TermType: 0
+    Description: 
+    Languages:
+    - :(
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-8
+    TermType: 0
+    Description: 
+    Languages:
+    - Take that
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-9
+    TermType: 0
+    Description: 
+    Languages:
+    - Boom
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-10
+    TermType: 0
+    Description: 
+    Languages:
+    - :D
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-11
+    TermType: 0
+    Description: 
+    Languages:
+    - Some day
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-12
+    TermType: 0
+    Description: 
+    Languages:
+    - Pls, leave my chat
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-13
+    TermType: 0
+    Description: 
+    Languages:
+    - some times
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-14
+    TermType: 0
+    Description: 
+    Languages:
+    - Bon Appetite
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-15
+    TermType: 0
+    Description: 
+    Languages:
+    - <3
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-16
+    TermType: 0
+    Description: 
+    Languages:
+    - Let me alone
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-17
+    TermType: 0
+    Description: 
+    Languages:
+    - Ignore
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-18
+    TermType: 0
+    Description: 
+    Languages:
+    - Help me daddy
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-19
+    TermType: 0
+    Description: 
+    Languages:
+    - I didn't know it
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers0/A0-20
+    TermType: 0
+    Description: 
+    Languages:
+    - Me too
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-1
+    TermType: 0
+    Description: 
+    Languages:
+    - Ignore
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-2
+    TermType: 0
+    Description: 
+    Languages:
+    - Take that
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-3
+    TermType: 0
+    Description: 
+    Languages:
+    - Ignore
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-4
+    TermType: 0
+    Description: 
+    Languages:
+    - You can leave if u want
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-5
+    TermType: 0
+    Description: 
+    Languages:
+    - I dont know
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-6
+    TermType: 0
+    Description: 
+    Languages:
+    - Ignore
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-7
+    TermType: 0
+    Description: 
+    Languages:
+    - Let me alone
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-8
+    TermType: 0
+    Description: 
+    Languages:
+    - American shit
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-9
+    TermType: 0
+    Description: 
+    Languages:
+    - I'm da best
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-10
+    TermType: 0
+    Description: 
+    Languages:
+    - :O
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-11
+    TermType: 0
+    Description: 
+    Languages:
+    - In your imagination
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-12
+    TermType: 0
+    Description: 
+    Languages:
+    - Ignore
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-13
+    TermType: 0
+    Description: 
+    Languages:
+    - WTF
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-14
+    TermType: 0
+    Description: 
+    Languages:
+    - Ignore
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-15
+    TermType: 0
+    Description: 
+    Languages:
+    - Thank you
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-16
+    TermType: 0
+    Description: 
+    Languages:
+    - :(
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-17
+    TermType: 0
+    Description: 
+    Languages:
+    - STFU
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-18
+    TermType: 0
+    Description: 
+    Languages:
+    - Fuck off
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-19
+    TermType: 0
+    Description: 
+    Languages:
+    - THANKS
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Answers1/A1-20
+    TermType: 0
+    Description: 
+    Languages:
+    - You are a piece of shit
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I1
+    TermType: 0
+    Description: 
+    Languages:
+    - Hi
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I2
+    TermType: 0
+    Description: 
+    Languages:
+    - WOOOW
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I3
+    TermType: 0
+    Description: 
+    Languages:
+    - Kappa
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I4
+    TermType: 0
+    Description: 
+    Languages:
+    - ResidentSleeper
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I5
+    TermType: 0
+    Description: 
+    Languages:
+    - How old are you?
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I6
+    TermType: 0
+    Description: 
+    Languages:
+    - Hi, can you read me?
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I7
+    TermType: 0
+    Description: 
+    Languages:
+    - You missed hahahahhs
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I8
+    TermType: 0
+    Description: 
+    Languages:
+    - American Sniper
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I9
+    TermType: 0
+    Description: 
+    Languages:
+    - Nice shot
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I10
+    TermType: 0
+    Description: 
+    Languages:
+    - Die motherfucker
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I11
+    TermType: 0
+    Description: 
+    Languages:
+    - Marry me pls
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I12
+    TermType: 0
+    Description: 
+    Languages:
+    - GRILL
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I13
+    TermType: 0
+    Description: 
+    Languages:
+    - You can turn on your ping ingame, so you and the stream can see your ingame
+      ping
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I14
+    TermType: 0
+    Description: 
+    Languages:
+    - Alright ima go get some food. Bye chat
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I15
+    TermType: 0
+    Description: 
+    Languages:
+    - thanks for being so cool!
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I16
+    TermType: 0
+    Description: 
+    Languages:
+    - GGWP
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I17
+    TermType: 0
+    Description: 
+    Languages:
+    - I want to see your tits
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I18
+    TermType: 0
+    Description: 
+    Languages:
+    - Oh, come on! You are so bad
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I19
+    TermType: 0
+    Description: 
+    Languages:
+    - You should target the legs first
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Interventions/I20
+    TermType: 0
+    Description: 
+    Languages:
+    - i want sex with you
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N1
+    TermType: 0
+    Description: 
+    Languages:
+    - Tom
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N2
+    TermType: 0
+    Description: 
+    Languages:
+    - shroog92
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N3
+    TermType: 0
+    Description: 
+    Languages:
+    - ShoonBGC
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N4
+    TermType: 0
+    Description: 
+    Languages:
+    - levansgar
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N5
+    TermType: 0
+    Description: 
+    Languages:
+    - Xanothh
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N6
+    TermType: 0
+    Description: 
+    Languages:
+    - Mystic_ninja
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N7
+    TermType: 0
+    Description: 
+    Languages:
+    - Hobhole
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N8
+    TermType: 0
+    Description: 
+    Languages:
+    - Deeblehlew
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N9
+    TermType: 0
+    Description: 
+    Languages:
+    - Cosmi
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N10
+    TermType: 0
+    Description: 
+    Languages:
+    - SQV
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N11
+    TermType: 0
+    Description: 
+    Languages:
+    - LucidMan
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N12
+    TermType: 0
+    Description: 
+    Languages:
+    - Arc_Knight
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N13
+    TermType: 0
+    Description: 
+    Languages:
+    - GoldMenole
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N14
+    TermType: 0
+    Description: 
+    Languages:
+    - HiddenShadow
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N15
+    TermType: 0
+    Description: 
+    Languages:
+    - Yowazaa123
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N16
+    TermType: 0
+    Description: 
+    Languages:
+    - Fariko
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N17
+    TermType: 0
+    Description: 
+    Languages:
+    - Noyd
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N18
+    TermType: 0
+    Description: 
+    Languages:
+    - Ilovethin
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N19
+    TermType: 0
+    Description: 
+    Languages:
+    - Oilizz3
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  - Term: Names/N20
+    TermType: 0
+    Description: 
+    Languages:
+    - jessg3m
+    - 
+    - 
+    Languages_Touch:
+    - 
+    - 
+    - 
+    Flags: 000000
+  mLanguages:
+  - Name: English
+    Code: en
+    Flags: 0
+  - Name: English (United Kingdom)
+    Code: en-GB
+    Flags: 0
+  - Name: Spanish
+    Code: es
+    Flags: 0
+  CaseInsensitiveTerms: 0
+  Assets: []
+  NeverDestroy: 1
+  UserAgreesToHaveItOnTheScene: 0
+  UserAgreesToHaveItInsideThePluginsFolder: 0
+  OnMissingTranslation: 1
+  mTerm_AppName: 
+  IgnoreDeviceLanguage: 0
+  Spreadsheet_LocalFileName: 
+  Spreadsheet_LocalCSVSeparator: ','
+  Spreadsheet_LocalCSVEncoding: utf-8
