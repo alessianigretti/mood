@@ -56,4 +56,4 @@ MonoBehaviour:
   _enemy1Sound: {fileID: 8300000, guid: a44c53eb0f2504dd3983deba94294175, type: 3}
   _startGameMusic: {fileID: 8300000, guid: 0b5683d9643474d6abad12742b858f21, type: 3}
   _loseGameMusic: {fileID: 8300000, guid: 101a62bfa5a6d4d35a271da58f6de6dd, type: 3}
-  _musicGame: {fileID: 8300000, guid: 14f124ec7402144608f16883528ddaa6, type: 3}
+  _musicGame: {fileID: 8300000, guid: c8c93329893ec488881b722216a3971e, type: 3}

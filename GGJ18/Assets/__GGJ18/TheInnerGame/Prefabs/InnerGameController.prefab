@@ -56,16 +56,20 @@ MonoBehaviour:
   - _enemyPrefab: {fileID: 114101745903098746, guid: 4cbcdea7f72d21f4b9ca10dba0dcf094,
       type: 2}
     _poolSize: 5
-    _chances: 2
+    _chances: 3
   - _enemyPrefab: {fileID: 114101745903098746, guid: 0768d209d351240fabc915fc77213d37,
       type: 2}
     _poolSize: 5
     _chances: 1
+  - _enemyPrefab: {fileID: 114101745903098746, guid: 7f6de5f553cbb4853ac07309ded4eba1,
+      type: 2}
+    _poolSize: 5
+    _chances: 2
   _minSpawnPositionX: -5
   _maxSpawnPositionX: 5
   _spawnPositionZ: 8
   _minDelay: 3
-  _maxDelay: 5
+  _maxDelay: 4
 --- !u!114 &114736507625034942
 MonoBehaviour:
   m_ObjectHideFlags: 1
