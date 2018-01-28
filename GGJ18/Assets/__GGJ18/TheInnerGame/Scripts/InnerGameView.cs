@@ -35,6 +35,12 @@ public class InnerGameView : TeamTheDream.Singleton<InnerGameView> {
     [SerializeField]
     Sprite [] _takeDamageGirl;
 
+    [SerializeField]
+    TMP_Text _scoreText;
+
+    [SerializeField]
+    TMP_Text _highScoreText;
+
     Tweener _damageTweener;
     CoroutineHandle? _damageCoroutine;
 
@@ -113,5 +119,23 @@ public class InnerGameView : TeamTheDream.Singleton<InnerGameView> {
                 });
             });
         });
+    }
+
+    public void SetScoreText(int score, int highscore)
+    {
+        _scoreText.text = string.Format("score: {0}", score);
+        _highScoreText.text = string.Format("high score: {0}", highscore);
+    }
+
+    public void ShowHighScore()
+    {
+        _scoreText.gameObject.SetActive(true);
+        _highScoreText.gameObject.SetActive(true);
+    }
+
+    public void HideHighScore()
+    {
+        _scoreText.gameObject.SetActive(false);
+        _highScoreText.gameObject.SetActive(false);
     }
 }

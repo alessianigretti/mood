@@ -13,13 +13,15 @@ public class InnerGameController : TeamTheDream.Singleton<InnerGameController> {
     [SerializeField]
     EnemiesSpawn _enemiesSpawn;
 
-
     public event System.Action<int> OnPlayerKillsEnemy;
     public event System.Action OnPlayerTakeDamage;
     public event System.Action OnPlayerDie;
 
     private bool _isActive;
     private int _lifes;
+
+    private int _score;
+    private int _highScore;
 
     public bool IsActive {
         get {
@@ -64,6 +66,13 @@ public class InnerGameController : TeamTheDream.Singleton<InnerGameController> {
     public void KillEnemy(Enemy enemy)
     {
         _enemiesSpawn.Kill(enemy);
+        _score += enemy.Points * 13;
+        if (_score > _highScore)
+        {
+            _highScore = _score;
+            PlayerPrefs.SetInt("HighScore", _highScore);
+        }
+        _view.SetScoreText(_score, _highScore);
         if (OnPlayerKillsEnemy != null) OnPlayerKillsEnemy(enemy.Points);
     }
 
@@ -76,7 +85,12 @@ public class InnerGameController : TeamTheDream.Singleton<InnerGameController> {
 
     private void StartGame()
     {
+        _highScore = PlayerPrefs.GetInt("HighScore", 0);
+        _score = 0;
+        _view.SetScoreText(_score, _highScore);
         _enemiesSpawn.StartSpawn();
+
+        _view.ShowHighScore();
     }
 
     private void EndGame()
@@ -95,6 +109,7 @@ public class InnerGameController : TeamTheDream.Singleton<InnerGameController> {
 
     public void Finish()
     {
+        _view.HideHighScore();
         _enemiesSpawn.Dispose();
         _view.Show(() =>
         {

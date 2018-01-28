@@ -39,5 +39,6 @@ public class StatsManager : MonoBehaviour
     public void UpdateFollowers()
     {
         followers += (int)((float)newViewers * ((float)uiInteract.chatScore / (float)chatMessages.counter) * variable);
+        if (followers < 0) followers = 0;
     }
 }
